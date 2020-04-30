@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Univia Pro";
+    font-style: normal;
+    font-weight: 100;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-100.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-100.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Univia Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-400.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Univia Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-700.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Univia Pro";
+    font-style: normal;
+    font-weight: 800;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-800.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-800.woff') format('woff');
+}
+
+@font-face {
+    font-family: "univia-pro";
+    font-style: normal;
+    font-weight: 100;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-100.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-100.woff') format('woff');
+}
+
+@font-face {
+    font-family: "univia-pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-400.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: "univia-pro";
+    font-style: normal;
+    font-weight: 700;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-700.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: "univia-pro";
+    font-style: normal;
+    font-weight: 800;
+    src: url('/rsi/static/fonts/univia-pro/univia-pro-800.woff2') format('woff2'),
+         url('/rsi/static/fonts/univia-pro/univia-pro-800.woff') format('woff');
+}

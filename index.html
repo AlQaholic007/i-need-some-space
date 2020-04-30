@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="rsi/static/css/cross-brand-less.css?v=3.12.0" media="all" rel="stylesheet" />
+    <link href="cache/en/rsi-platformbar-css.css?v=3.12.0" media="all" rel="stylesheet" />
+    <script type="text/javascript" src="cache/en/rsi-js.js?v=3.12.0"></script>
+
+    <script>
+      $(document).ready(function() {
+        window.Common = new RSI.Common({});
+        window.Main = new RSI.Main({
+          is_mobile: 0,
+          probation_cookie: "",
+          require_captcha: 0
+        });
+
+        window.WscOverlay = new RSI.WscOverlay({});
+
+        var destinations = [];
+
+        window.Main.destinations = destinations;
+        new RSI.Community({});
+        new RSI.Community.Hub();
+      });
+
+      $(window).load(function() {});
+    </script>
+
+    <script>
+      window.recaptcha_is_loaded = false;
+      window.on_recaptcha_load_callback = function() {
+        window.recaptcha_is_loaded = true;
+      };
+    </script>
+
+    <script type="text/javascript"></script>
+
+    <title>
+      Vidhi Mody | Portfolio
+    </title>
+
+    <link href="cache/en/rsi-community-hub-css.css?v=3.12.0" rel="stylesheet" type="text/css" />
+
+    <style>
+      body {
+        background: url(rsi/static/images/noisebg.gif) repeat center top #000b11;
+      }
+    </style>
+
+    <link href="//fonts.googleapis.com/css?family=Electrolize|Orbitron:400,500,700|Quantico|Share+Tech+Mono&display=swap" rel="stylesheet" type="text/css" />
+
+    <link href="cache/en/rsi-css.css?v=3.12.0" media="all" rel="stylesheet" />
+  </head>
+
+  <body id="community" class="hub">
+    <div id="bodyWrapper">
+      <header class="c-header-wrapper c-header-wrapper--rsi js-header-wrapper " id="cross-brand-header">
+        <div id="platform-bar"></div>
+
+        <div class="c-header-wrapper__backdrop js-toggle-games"></div>
+      </header>
+
+      <div id="platform-backdrop"></div>
+
+      <script type="text/javascript">
+        RSI.Platformbar = {
+          theme: "rsi",
+          loggedState: "logged-out",
+          tabs: [
+            {
+              type: "apps",
+              name: "NAVIGATION",
+              subItems: [
+                [
+                  {
+                    name: "Featured Projects",
+                    href: "#featuredProjects",
+                    description: "Some of my recent projects"
+                  },
+                  {
+                    name: "News",
+                    href: "#news",
+                    description: "What's up with my life"
+                  }
+                ],
+                [
+                  {
+                    name: "Skills",
+                    href: "#skills",
+                    description: "Bunch of stuff I'm skilled at"
+                  },
+                  {
+                    name: "Publications",
+                    href: "#publications",
+                    description: "My research work and publications"
+                  },
+                  {
+                    name: "Work",
+                    href: "#work",
+                    description: "What people I've worked with say about me"
+                  }
+                ]
+              ]
+            },
+            {
+              type: "citizencon",
+              name: "_source",
+              href: "https://github.com/vidhi-mody/oblivion.git"
+            }
+          ],
+          navigation: {
+            store: {
+              name: "",
+              href: "",
+              isHidden: true
+            },
+            support: {
+              name: "Repo",
+              href: "https://github.com/vidhi-mody/i-need-some-space"
+            },
+            account: {
+              name: "Contributors",
+              href: "https://github.com/vidhi-mody/i-need-some-space/contributors"
+            }
+          }
+        };
+
+        $(document).ready(function() {
+          window.header = new RSI.Header({});
+        });
+      </script>
+
+      <header class="c-brand-menu c-brand-menu----rsi" id="brand-menu">
+        <span class="c-brand-menu__section">
+          Vidhi Mody
+        </span>
+        <div class="c-brand-menu__backdrop"></div>
+        <nav class="c-brand-menu__container">
+          <div class="c-brand-menu__logo">
+            <a href="/"></a>
+          </div>
+          <div class="c-brand-menu__items-container">
+            <ul class="c-brand-menu__items">
+              <li class="c-brand-menu__item is-active has-submenu js-open-brand-submenu">
+                <a class="c-menu-link c-menu-link----rsi c-brand-menu__link" href="/community">
+                  <span class="c-brand-menu__item-text">Links</span>
+                </a>
+                <div class="c-brand-submenu">
+                  <a href="#" class="c-brand-submenu-back js-brand-submenu-close">
+                    <span class="c-brand-submenu-back-text">Back /</span>
+                    <span class="c-brand-submenu-back-section">Links</span>
+                  </a>
+                  <div class="c-brand-submenu__left"></div>
+                  <div class="c-brand-submenu__wrapper">
+                    <ul class="c-brand-submenu__items">
+                      <li class="c-brand-submenu__item ">
+                        <a href="https://www.linkedin.com/in/vidhi-mody-21629a150/" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          LinkedIn
+                        </a>
+                      </li>
+                      <li class="c-brand-submenu__item ">
+                        <a href="https://github.com/vidhi-mody" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          GitHub
+                        </a>
+                      </li>
+                      <li class="c-brand-submenu__item ">
+                        <a href="mailto:vidhimody6@gmail.com" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          Email
+                        </a>
+                      </li>
+                      <li class="c-brand-submenu__item ">
+                        <a href="https://www.facebook.com/vidhi.mody.3" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          Facebook
+                        </a>
+                      </li>
+                      <li class="c-brand-submenu__item is-active">
+                        <a href="https://www.instagram.com/vidhi_mody/" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          Instagram
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="c-brand-submenu__right"></div>
+                </div>
+              </li>
+              <li class="c-brand-menu__item is-active has-submenu js-open-brand-submenu">
+                <a class="c-menu-link c-menu-link----rsi c-brand-menu__link" href="#">
+                  <span class="c-brand-menu__item-text">Organizations</span>
+                </a>
+                <div class="c-brand-submenu">
+                  <a href="#" class="c-brand-submenu-back js-brand-submenu-close">
+                    <span class="c-brand-submenu-back-text">Back /</span>
+                    <span class="c-brand-submenu-back-section">Organizations</span>
+                  </a>
+                  <div class="c-brand-submenu__left"></div>
+                  <div class="c-brand-submenu__wrapper">
+                    <ul class="c-brand-submenu__items">
+                      <li class="c-brand-submenu__item ">
+                        <a href="https://www.vitalcare.epizy.com/" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          VitalCare
+                        </a>
+                      </li>
+                      <li class="c-brand-submenu__item ">
+                        <a href="https://github.com/Friend.ly" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          Friend.ly
+                        </a>
+                      </li>
+                      <li class="c-brand-submenu__item ">
+                        <a href="https://github.com/GitJobs" class="c-brand-submenu__link c-menu-link c-menu-link--small c-menu-link----rsi">
+                          GitJobs
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="c-brand-submenu__right"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="c-brand-menu__cta">
+            <a href="vidhi_resume.pdf" class="c-brand-cta-btn js-google-analytics-event-tracker" data-event-category="FlyNow" data-event-label="navMenuClick" download>
+              <div></div>
+              <span class="c-brand-cta-btn__text"> <strong>Resume</strong>download </span>
+              <div></div>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <div class="page-wrapper">
+        <div id="post-background"></div>
+        <div id="home-background">
+          <div class="bg-home-stars"></div>
+        </div>
+
+        <div id="contentbody" class="" style="">
+          <div class="wrapper">
+            <div class="glow-hub-title">
+              <div class="glow-hub-section"><a href="#">portfolio /</a></div>
+              <h1><a href="#">Vidhi Mody</a></h1>
+              <h2>Software Developer</h2>
+            </div>
+          </div>
+
+          <div class="wrapper" id="featuredProjects">
+            <div class="two-columns clearfix">
+              <div class="left-column">
+                <div id="flipboard-citizen-spotlight">
+                  <div class="glow-page-title with-link with-subtitle ">
+                    <a href="" class="inner-title">
+                      <h2 class="title">Featured Projects</h2>
+                      <div class="cboth"></div>
+                    </a>
+                    <div class="link-title nav-title">
+                      <div class="link">
+                        <div class="actions nav">
+                          <a class="up js-flipboard-slide-control user-select-none" data-slide-way="up"></a>
+                          <a class="down js-flipboard-slide-control user-select-none" data-slide-way="down"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="community-hub-citizen-spotlight-block community-hub-flipboard-block">
+                    <div class="flipboard-viewport-wrapper">
+                      <div class="flipboard-viewport">
+                        <div class="flipboard-boxes inner js-flipboard-strip-slider-inner trans-03s">
+                          <div class="flipboard-page flipboard-boxes js-page" data-page="0">
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/friendly.html" title="Friend.ly">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">ML /</li>
+                                    <li class="nav-item section">Web</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">Friend.ly</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange">
+                                    <span class="label">READ MORE</span>
+                                    <span class="arrow"></span>
+                                  </span>
+                                  <div class="complement">
+                                    <div class="date">
+                                      <span class="value"><i>Friend.ly is a friend recommendation platform that leverages text-mining, personality trait extraction and mood detection.</i></span>
+                                    </div>
+                                    <br />
+                                    <div class="comments">
+                                      <span class="name">Collaborator[s]</span>
+                                      <a class="value" href="mailto:mail@sohamp.dev">AlQaholic007</a>/
+                                      <a class="value" href="mailto:vrushtimody6@gmail.com">vrushti-mody</a>
+                                    </div>
+                                    <div class="vote  js-modal-login " data-id="5084pey64ffjr" data-type="citizen-spotlight">
+                                      <span class="upvote" onclick="(() => { location.href = `http://www.github.com/AlQaholic007/Friend.ly`})(); return false"></span>
+                                      <span class="value"><span class="count">LINK</span></span>
+                                    </div>
+                                  </div>
+                                </header>
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/gitjobs.html" title="GitJobs">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">ML /</li>
+                                    <li class="nav-item section">Web</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">GitJobs</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange">
+                                    <span class="label">Read More</span>
+                                    <span class="arrow"></span>
+                                  </span>
+                                  <div class="complement">
+                                    <div class="comments">
+                                      <span class="value"><i>GitJobs is an AI-based talent acquisition platform that automates hiring process for GitHub developers.</i></span>
+                                    </div>
+                                    <br />
+                                    <div class="date">
+                                      <span class="name">COLLABORATOR[S]</span>
+                                      <a class="value" href="mailto:mail@sohamp.dev">AlQaholic007</a>/
+                                      <a class="value" href="mailto:vrushtimody6@gmail.com">vrushti-mody</a>
+                                    </div>
+                                    <div class="vote  js-modal-login " data-id="bk3iebns6yk8b" data-type="citizen-spotlight">
+                                      <span class="upvote" onclick="(() => {location.href = `https://github.com/AlQaholic007/GitJobs`})(); return false"></span>
+                                      <span class="value"><span class="count">LINK</span></span>
+                                    </div>
+                                  </div>
+                                </header>
+
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/vitalcare.html" title="VitalCare">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">Web</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">VitalCare</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                  <div class="complement">
+                                    <div class="comments">
+                                      <span class="value"><i>VitalCare is a healthcare delivery e-commerce platform.</i></span>
+                                    </div>
+                                    <br />
+                                    <div class="date">
+                                      <span class="name">CONTRIBUTOR[S]</span>
+                                      <a class="value" href="mailto:vrushtimody6@gmail.com">vrushti-mody</a>
+                                    </div>
+                                    <div class="vote  js-modal-login " data-id="k91pq78dje0qv" data-type="citizen-spotlight">
+                                      <span class="upvote" onclick="(() => {location.href=`http://www.vitalcare.epizy.com`})(); return false;"></span>
+                                      <span class="value"><span class="count">LINK</span></span>
+                                    </div>
+                                  </div>
+                                </header>
+
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/droidoc.html" title="DroiDoc">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">Android</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">Droidoc</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                  <div class="complement">
+                                    <div class="comments">
+                                      <span class="value"><i>DroiDoc is an android application for emergencies and a healthy living.</i></span>
+                                    </div>
+                                    <br />
+                                    <div class="date">
+                                      <span class="name">COLLABORATOR[S]</span>
+                                      <a class="value" href="mailto:vrushtimody6@gmail.com">vrushti-mody</a>
+                                    </div>
+                                  </div>
+                                </header>
+
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="flipboard-page flipboard-boxes js-page" data-page="1">
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/iheart.html" title="iHeart">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">ML</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">iHeart</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                  <div class="complement">
+                                    <div class="comments">
+                                      <span class="value"><i>A machine learning model to predict risk of heart disease.</i></span>
+                                    </div>
+                                    <br />
+                                    <div class="date">
+                                      <span class="name">COLLABORATOR[S]</span>
+                                      <a class="value" href="mailto:vrushtimody6@gmail.com">vrushti-mody</a>
+                                    </div>
+
+                                    <div class="vote  js-modal-login " data-id="pp6irnxlwnjx9" data-type="citizen-spotlight">
+                                      <span class="upvote" onclick="(()=>location.href=`https://github.com/vidhi-mody/Prediction-of-Risk-of-Heart-Disease`)(); return false;"></span>
+                                      <span class="value"><span class="count">LINK</span></span>
+                                    </div>
+                                  </div>
+                                </header>
+
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/blogcorpus.html" title="Blog Authorship Corpus">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">ML /</li>
+                                    <li class="nav-item section">NLP</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">Blog Authorship Corpus</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">VIEW MORE</span> <span class="arrow"></span> </span>
+                                  <div class="complement">
+                                    <div class="comments">
+                                      <span class="name"><i>My submission for Kaggle's Blog Authorship Corpus Problem</i></span>
+                                    </div>
+                                    <br />
+
+                                    <div class="vote  js-modal-login " data-id="grm1c3a2zhuol" data-type="citizen-spotlight">
+                                      <span class="upvote" onclick="(() => {location.href=`https://github.com/vidhi-mody/NLP-Text-Corpora-Preprocessing`})(); return false;"></span>
+                                      <span class="value"><span class="count">LINK</span></span>
+                                    </div>
+                                  </div>
+                                </header>
+
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/melbourne" title="Melbourne Pricing">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">ML</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">Melbourne Pricing</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">VIEW MORE</span> <span class="arrow"></span> </span>
+                                  <div class="complement">
+                                    <div class="comments">
+                                      <span class="name"><i>My submission for Kaggle's Melbourne House Pricing Dataset</i></span>
+                                    </div>
+                                    <br />
+
+                                    <div class="vote  js-modal-login " data-id="grm1c3a2zhuol" data-type="citizen-spotlight">
+                                      <span class="upvote" onclick="(() => {location.href=`https://github.com/vidhi-mody/House-Pricing-Prediction`})(); return false;"></span>
+                                      <span class="value"><span class="count">LINK</span></span>
+                                    </div>
+                                  </div>
+                                </header>
+
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+
+                            <article class="box post one-third type-B CH js-box ">
+                              <a href="/projects/resumefiltering" title="Resume Filtering">
+                                <header class="info">
+                                  <ul class="glow-mini-breadcrumb">
+                                    <li class="nav-item channel">Data Mining</li>
+                                  </ul>
+
+                                  <h3 class="title js-ellipsis">Resume Classifier</h3>
+
+                                  <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">VIEW MORE</span> <span class="arrow"></span> </span>
+                                  <div class="complement">
+                                    <div class="comments">
+                                      <span class="name"><i>A NLP-based resume classifier that classifies resume of software developers</i></span>
+                                    </div>
+                                    <br />
+
+                                    <div class="vote  js-modal-login " data-id="grm1c3a2zhuol" data-type="citizen-spotlight">
+                                      <span class="upvote" onclick="(() => {location.href=`https://github.com/vidhi-mody/Resume-Classifier`})(); return false;"></span>
+                                      <span class="value"><span class="count">LINK</span></span>
+                                    </div>
+                                  </div>
+                                </header>
+
+                                <div class="glow-corners top-corners"></div>
+                                <div class="glow-corners bottom-corners"></div>
+                              </a>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="submission-wrapper">
+                      <a href="mailto:vidhimody6@gmail.com" alt="" class="glow-arrows-button link medium-size left-arrow js-modal-login">
+                        <span class="label">Click <span>to Collaborate</span></span> <span class="arrow"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-column clearfix" id="news">
+                <div class="community-hub-social-block cutting-edge-content clearfix" id="social-feeds">
+                  <div class="top-info">
+                    <div class="title">
+                      <h3>News on...</h3>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="cutting-edge-menu">
+                      <div class="pointed-line"></div>
+                      <ul class="cutting-edge-menu-items js-social-feeds">
+                        <li class="active trans-02s" data-author="0">Feeds<span></span></li>
+                        <!-- <li data-author="1" class="trans-02s">Facebook<span></span></li> -->
+                      </ul>
+                      <div alss></div>
+                      <div class="cboth"></div>
+                      <div class="pointed-line"></div>
+                    </div>
+
+                    <div class="feeds">
+                      <div class="feeds-wrapper js-feeds-wrapper">
+                        <div class="feed js-feed trans-03s twitter active" data-feed="0">
+                          <div class="feed-wrapper js-feed-wrapper" data-height="">
+                            <div class="scrollable">
+                              <div class="viewport">
+                                <div class="content">
+                                  <div class="entry clearfix">
+                                    <div class="infos">
+                                      <div class="date">Wednesday, Feb 26</div>
+                                      <div class="text">
+                                        Accepted for graduate study at the University of Massachusetts Amherst, in the Master of Science program in the College of Information and Computer Sciences for
+                                        the Fall 2020 semester.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="entry clearfix">
+                                    <div class="infos">
+                                      <div class="date">Tuesday, February 18</div>
+                                      <div class="text">
+                                        Got accepted in the NC State University for MS in Computer Science, for the batch Fall 2020
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="feed js-feed trans-03s facebook" data-feed="1">
+                          <div class="feed-wrapper js-feed-wrapper" data-height="">
+                            <div class="scrollable">
+                              <div class="viewport">
+                                <div class="content"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bottom-info">
+                    <div>
+                      <div class="actions nav"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="community-hub-event-box cutting-edge-content clearfix">
+                  <div class="top-info clearfix">
+                    <div class="title">
+                      <h3>Upcoming</h3>
+                    </div>
+                  </div>
+                  <div class="flipboard-boxes">
+                    <div class="box event  type-CE">
+                      <div class="event-inner-wrapper">
+                        <header class="info">
+                          <ul class="glow-mini-breadcrumb">
+                            <li class="nav-item section">Upcoming events</li>
+                          </ul>
+                        </header>
+
+                        <div class="events-list"></div>
+                      </div>
+                      <div class="glow-corners top-corners"></div>
+                      <div class="glow-corners bottom-corners"></div>
+                    </div>
+                  </div>
+                  <div class="bottom-info">
+                    <div>
+                      <div class="actions"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper" id="work">
+            <div class="two-columns clearfix">
+              <div class="left-column">
+                <div id="flipboard-deep-space-radar">
+                  <div class="glow-page-title with-link with-subtitle ">
+                    <a href="#" class="inner-title">
+                      <h2 class="title">Work</h2>
+                      <div class="cboth"></div>
+                    </a>
+                    <div class="link-title nav-title">
+                      <div class="link">
+                        <div class="actions nav">
+                          <a class="up js-flipboard-slide-control user-select-none" data-slide-way="up"></a>
+                          <a class="down js-flipboard-slide-control user-select-none" data-slide-way="down"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="community-hub-deep-space-radar-block community-hub-flipboard-block">
+                    <div class="flipboard-viewport-wrapper">
+                      <div class="flipboard-viewport">
+                        <div class="flipboard-dsp-boxes inner js-flipboard-strip-slider-inner js-dsp-resize trans-03s">
+                          <div class="flipboard-page dsp-boxes js-page" data-page="0">
+                            <div class="dsr-box staff-pick">
+                              <div class="inner">
+                                <div class="content">
+                                  <h4 class="title"><a class="js-ellipsis">Acquisory Risk Consulting Pvt. Ltd.</a></h4>
+                                  <div class="comments"><span>Risk Analysis Intern</span></div>
+                                  <div class="js-ellipsis content">
+                                    - Performed digital forensics for Risk Analysis with the help of FTK Toolkit.<br />- Submitted a report on ‘A study of Digital Forensics in India’
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="dsr-box staff-pick">
+                              <div class="inner">
+                                <div class="content">
+                                  <h4 class="title"><a class="js-ellipsis">Infomoko Technology Pvt. Ltd (BabyChakra)</a></h4>
+                                  <div class="comments"><span>Community and Content Intern</span></div>
+                                  <div class="js-ellipsis content">- Analyzing data for user engagement using ‘Periscope’.<br />- Designing content for community building</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="dsr-box staff-pick">
+                              <div class="inner">
+                                <div class="content">
+                                  <h4 class="title"><a class="js-ellipsis">Manna Healthcare Pvt. Ltd.</a></h4>
+                                  <div class="comments"><span>Digital Marketing Intern</span></div>
+                                  <div class="js-ellipsis content">
+                                    - Developing a marketing calendar and carrying out competitive analysis<br />- On call coordination for the #WomenWhoLead Campaign
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="submission-wrapper">
+                        <a onclick="(function() {location.href=`https://www.linkedin.com/in/vidhi-mody-21629a150`})(); return false;" class="glow-arrows-button link medium-size left-arrow js-modal-login">
+                          <span class="label">Hit me up<span> on LinkedIn</span></span> <span class="arrow"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-column">
+                <div class="community-hub-organizations-block cutting-edge-content clearfix">
+                  <div class="top-info">
+                    <div class="title">
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h4>Software Development Intern</h4>
+                  </div>
+
+                  <div class="bottom-info">
+                    <div>
+                      <div class="actions">
+                        <a href="https://www.linkedin.com/in/vidhi-mody-21629a150" target="_blank" alt="" class="glow-arrows-button link small-size left-arrow">
+                          <span class="label">we want you</span> <span class="arrow"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="community-hub-chat-block cutting-edge-content clearfix">
+                  <div class="top-info">
+                    <div class="title">
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h4>Web Development Intern</h4>
+                  </div>
+
+                  <div class="bottom-info">
+                    <div>
+                      <div class="actions">
+                        <a href="https://www.linkedin.com/in/vidhi-mody-21629a150" target="_blank" alt="" class="glow-arrows-button link small-size left-arrow">
+                          <span class="label">we want you</span> <span class="arrow"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="community-hub-patch-notes-block cutting-edge-content clearfix">
+                  <div class="top-info">
+                    <div class="title">
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h4>Machine Learning Intern</h4>
+                  </div>
+
+                  <div class="bottom-info">
+                    <div>
+                      <div class="actions">
+                        <a href="https://www.linkedin.com/in/vidhi-mody-21629a150" target="_blank" alt="" class="glow-arrows-button link small-size left-arrow">
+                          <span class="label">we want you</span> <span class="arrow"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="community-hub-patch-notes-block cutting-edge-content clearfix">
+                  <div class="top-info">
+                    <div class="title">
+                      <h3></h3>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h4>Data Science Intern</h4>
+                  </div>
+
+                  <div class="bottom-info">
+                    <div>
+                      <div class="actions">
+                        <a href="https://www.linkedin.com/in/vidhi-mody-21629a150" target="_blank" alt="" class="glow-arrows-button link small-size left-arrow">
+                          <span class="label">we want you</span> <span class="arrow"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glow-page-title with-link with-subtitle wrapper" id="skills">
+            <a href="#" class="inner-title">
+              <h2 class="title">Skills</h2>
+              <div class="cboth"></div>
+            </a>
+            <div class="link-title ">
+              <div class="link">
+                <a href="vidhi_resume.pdf" title="Resume" class="view-all" download>View resume</a>
+              </div>
+            </div>
+          </div>
+          <div class="streamer-podcast-carousel podcasts-streamer-large-strip">
+            <div class="streamer-boxes streamer-large-box-strip large-boxes">
+              <div id="podcasts-streamer-large-strip" class="streamer-large-strip streamer-large-box-container js-streamer-strip-slider">
+                <a href="#" class="streamer-control left js-streamer-slide-control" data-slide-way="left">
+                  <span class="glow-arrows-button big-size">
+                    <span class="arrow"></span>
+                  </span>
+                </a>
+
+                <div class="streamer-strip-slider-wrapper js-streamer-strip-slider-wrapper">
+                  <div class="flipboard-boxes streamer-boxes js-streamer-strip-slider-inner">
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.python.org/" title="Python">
+                              <header class="info">
+                                <h3 class="title">Python</h3>
+
+                                <p class="excerpt">
+                                  Python is a programming language that lets you work quickly and integrate systems more effectively
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.java.com/en/" title="Java">
+                              <header class="info">
+                                <h3 class="title">Java</h3>
+
+                                <p class="excerpt">
+                                  Java is a general-purpose programming language that is class-based & object-oriented.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.cplusplus.org/" title="C++">
+                              <header class="info">
+                                <h3 class="title">C++</h3>
+
+                                <p class="excerpt">
+                                  C++ is a high-level, general-purpose programming language.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="Javascript">
+                              <header class="info">
+                                <h3 class="title">Javascript</h3>
+
+                                <p class="excerpt">
+                                  JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.mysql.com/" title="MySQL">
+                              <header class="info">
+                                <h3 class="title">MySQL</h3>
+
+                                <p class="excerpt">
+                                  MySQL is an open-source relational database management system (RDBMS) used by many database-driven web applications.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.postgresql.org" title="PostgreSQL">
+                              <header class="info">
+                                <h3 class="title">PostgreSQL</h3>
+
+                                <p class="excerpt">
+                                  PostgreSQL is a powerful, open source object-relational database system that uses SQL combined with many features.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.mongodb.com/" title="MongoDB">
+                              <header class="info">
+                                <h3 class="title">MongoDB</h3>
+
+                                <p class="excerpt">
+                                  MongoDB is a cross-platform document-oriented database program.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://docs.djangoproject.com/en/" title="Django">
+                              <header class="info">
+                                <h3 class="title">Django</h3>
+
+                                <p class="excerpt">
+                                  Django is a high-level Python Web framework
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.php.net/" title="PHP">
+                              <header class="info">
+                                <h3 class="title">PHP</h3>
+
+                                <p class="excerpt">
+                                  PHP is a popular general-purpose scripting language that is especially suited to web development.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://nodejs.org" title="NodeJS">
+                              <header class="info">
+                                <h3 class="title">NodeJS</h3>
+
+                                <p class="excerpt">
+                                  Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://git-scm.com/" title="Git">
+                              <header class="info">
+                                <h3 class="title">Git</h3>
+
+                                <p class="excerpt">
+                                  Git is a free and open source distributed version control system.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                    <div class="box js-box">
+                      <div class="stream-holder">
+                        <div class="stream-flux">
+                          <article class="box post one-third type-POD js-box live-streamer-title">
+                            <a href="https://www.docker.com/" title="Docker">
+                              <header class="info">
+                                <h3 class="title">Docker</h3>
+
+                                <p class="excerpt">
+                                  Docker is a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers.
+                                </p>
+
+                                <span class="glow-arrows-button article-link small-size left-arrow orange"> <span class="label">Read More</span> <span class="arrow"></span> </span>
+                                <div class="complement"></div>
+                              </header>
+
+                              <div class="glow-corners top-corners"></div>
+                              <div class="glow-corners bottom-corners"></div>
+                            </a>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="stream-bottom-holder"></div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="streamer-control right js-streamer-slide-control" data-slide-way="right">
+                  <span class="glow-arrows-button big-size">
+                    <span class="arrow"></span>
+                  </span>
+                </a>
+                <div class="submission-wrapper">
+                  <a onclick="(function() {location.href=`https://www.linkedin.com/in/vidhi-mody-21629a150`})(); return false;" alt="" class="glow-arrows-button link medium-size left-arrow js-modal-login">
+                    <span class="label">Hit me up <span>on LinkedIn</span></span> <span class="arrow"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="glow-page-title with-link with-subtitle mvp-post-week-title" id="publications">
+              <a href="" class="inner-title">
+                <h2 class="title">Publications</h2>
+                <div class="cboth"></div>
+              </a>
+              <div class="link-title ">
+                <div class="link"></div>
+              </div>
+            </div>
+            <div class="flipboard-boxes mvp-flipboard-boxes">
+              <div class="mvp-entry trans-03s large">
+                <div class="detail trans-03s">
+                  <div class="label"><span>ML / Healthcare</span></div>
+                  <div class="citizen">
+                    <div class="posted"><span>IEEE 5th I2CT 2019</span></div>
+                    <div class="post">
+                      <a class="mvp_post_title">
+                        <span class="quotes left"></span>
+                        <span class="title trans-03s">Mental Health Monitoring System using Artificial Intelligence</span>
+                        <span class="quotes right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-info">
+                  <div class="line trans-03s"></div>
+                  <a href="#" alt="" target="_blank" class="glow-arrows-button link small-size left-arrow"> <span class="label">Read</span> <span class="arrow"></span> </a>
+                </div>
+                <div class="glow-corners top-corners"></div>
+                <div class="glow-corners bottom-corners"></div>
+              </div>
+              <div class="mvp-entry trans-03s large">
+                <div class="detail trans-03s">
+                  <div class="label"><span>Cloud Computing</span></div>
+                  <div class="citizen">
+                    <div class="posted"><span></span></div>
+                    <div class="post">
+                      <a class="mvp_post_title" href="#" target="_blank">
+                        <span class="quotes left"></span>
+                        <span class="title trans-03s">A study on Cloud enabled applications and their Security Issues.</span>
+                        <span class="quotes right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-info">
+                  <div class="line trans-03s"></div>
+                  <a href="#" alt="" target="_blank" class="glow-arrows-button link small-size left-arrow"> <span class="label">Read</span> <span class="arrow"></span> </a>
+                </div>
+                <div class="glow-corners top-corners"></div>
+                <div class="glow-corners bottom-corners"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="c-platform-footer c-platform-footer--rsi">
+        <div class="l-platform-footer-container">
+          <div class="c-platform-footer__column l-column ">
+            <ul class="c-platform-footer-brand c-platform-footer-brand--sc">
+              <li class="c-platform-footer-brand__item">
+                <span class="c-brand c-brand--sc js-footer-open-sub-menu">
+                  <span class="c-brand__logo c-brand__logo--sc">
+                  </span>
+
+                  <span class="c-brand__label">
+                    Links
+                  </span>
+
+                  <span class="c-brand__arrow">
+                    <svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path
+                        transform="translate(-8.000000, -5.000000)"
+                        d="M15.3610114,5.87946602 L8.86459388,12.5876406 C8.62203758,12.8388577 8.50002884,13.1692873 8.50002884,13.499717 C8.49783707,13.8331643 8.6205764,14.1628395 8.86459388,14.4140566 L15.3610114,21.1229856 C15.8468546,21.6246653 16.6424685,21.6269285 17.1312341,21.1222312 C17.6236526,20.6130074 17.6214608,19.7982494 17.1334258,19.2943064 L11.5232155,13.5012258 L17.1334258,7.7088996 C17.6185384,7.20721987 17.6214608,6.38567218 17.1312341,5.88022042 C16.8857554,5.62674014 16.5657564,5.5 16.246488,5.5 C15.9257585,5.5 15.6057595,5.62749455 15.3610114,5.87946602 Z"
+                        id="path-1"
+                      ></path>
+                    </svg>
+                  </span>
+                </span>
+
+                <ul class="c-platform-footer-list c-platform-footer-list--sc">
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://www.facebook.com/vidhi.mody.3" class="c-platform-footer-link">Facebook</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://github.com/vidhi-mody/" class="c-platform-footer-link">GitHub</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://www.instagram.com/vidhi_mody/" class="c-platform-footer-link">Instagram</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="mailto:vidhimody6@gmail.com" class="c-platform-footer-link">Email</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://www.linkedin.com/in/vidhi-mody-21629a150" class="c-platform-footer-link">
+                      LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="c-platform-footer__column l-column ">
+            <ul class="c-platform-footer-brand c-platform-footer-brand--s42">
+              <li class="c-platform-footer-brand__item">
+                <span class="c-brand c-brand--s42 js-footer-open-sub-menu">
+                  <span class="c-brand__logo c-brand__logo--s42">
+                  </span>
+
+                  <span class="c-brand__label">
+                    Organizations
+                  </span>
+
+                  <span class="c-brand__arrow">
+                    <svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path
+                        transform="translate(-8.000000, -5.000000)"
+                        d="M15.3610114,5.87946602 L8.86459388,12.5876406 C8.62203758,12.8388577 8.50002884,13.1692873 8.50002884,13.499717 C8.49783707,13.8331643 8.6205764,14.1628395 8.86459388,14.4140566 L15.3610114,21.1229856 C15.8468546,21.6246653 16.6424685,21.6269285 17.1312341,21.1222312 C17.6236526,20.6130074 17.6214608,19.7982494 17.1334258,19.2943064 L11.5232155,13.5012258 L17.1334258,7.7088996 C17.6185384,7.20721987 17.6214608,6.38567218 17.1312341,5.88022042 C16.8857554,5.62674014 16.5657564,5.5 16.246488,5.5 C15.9257585,5.5 15.6057595,5.62749455 15.3610114,5.87946602 Z"
+                        id="path-1"
+                      ></path>
+                    </svg>
+                  </span>
+                </span>
+
+                <ul class="c-platform-footer-list c-platform-footer-list--s42">
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://github.com/Friend.ly" class="c-platform-footer-link">Friend.ly</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="http://www.vitalcare.epizy.com" class="c-platform-footer-link">VitalCare</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://github.com/GitJobs" class="c-platform-footer-link">GitJobs</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="c-platform-footer__column l-column">
+            <ul class="c-platform-footer-brand c-platform-footer-brand--rsi">
+              <li class="c-platform-footer-brand__item">
+                <span class="c-brand c-brand--rsi js-footer-open-sub-menu">
+                  <span class="c-brand__logo c-brand__logo--rsi">
+                  </span>
+                  <span class="c-brand__label">
+                    Featured Projects
+                  </span>
+                  <span class="c-brand__arrow">
+                    <svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path
+                        transform="translate(-8.000000, -5.000000)"
+                        d="M15.3610114,5.87946602 L8.86459388,12.5876406 C8.62203758,12.8388577 8.50002884,13.1692873 8.50002884,13.499717 C8.49783707,13.8331643 8.6205764,14.1628395 8.86459388,14.4140566 L15.3610114,21.1229856 C15.8468546,21.6246653 16.6424685,21.6269285 17.1312341,21.1222312 C17.6236526,20.6130074 17.6214608,19.7982494 17.1334258,19.2943064 L11.5232155,13.5012258 L17.1334258,7.7088996 C17.6185384,7.20721987 17.6214608,6.38567218 17.1312341,5.88022042 C16.8857554,5.62674014 16.5657564,5.5 16.246488,5.5 C15.9257585,5.5 15.6057595,5.62749455 15.3610114,5.87946602 Z"
+                        id="path-1"
+                      ></path>
+                    </svg>
+                  </span>
+                </span>
+
+                <ul class="c-platform-footer-list c-platform-footer-list--rsi">
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://github.com/AlQaholic007/Friend.ly" class="c-platform-footer-link">Friend.ly</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://github.com/AlQaholic007/GitJobs" class="c-platform-footer-link">GitJobs</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="https://github.com/vidhi-mody/Prediction-of-Risk-of-Heart-Disease" class="c-platform-footer-link">iHeart</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="c-platform-footer__column l-column">
+            <ul class="c-platform-footer-brand c-platform-footer-brand--rsi">
+              <li class="c-platform-footer-brand__item">
+                <span class="c-brand c-brand--rsi js-footer-open-sub-menu">
+                  <span class="c-brand__logo c-brand__logo--s42"> </span>
+                  <span class="c-brand__label">
+                    Navigation
+                  </span>
+                  <span class="c-brand__arrow">
+                    <svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path
+                        transform="translate(-8.000000, -5.000000)"
+                        d="M15.3610114,5.87946602 L8.86459388,12.5876406 C8.62203758,12.8388577 8.50002884,13.1692873 8.50002884,13.499717 C8.49783707,13.8331643 8.6205764,14.1628395 8.86459388,14.4140566 L15.3610114,21.1229856 C15.8468546,21.6246653 16.6424685,21.6269285 17.1312341,21.1222312 C17.6236526,20.6130074 17.6214608,19.7982494 17.1334258,19.2943064 L11.5232155,13.5012258 L17.1334258,7.7088996 C17.6185384,7.20721987 17.6214608,6.38567218 17.1312341,5.88022042 C16.8857554,5.62674014 16.5657564,5.5 16.246488,5.5 C15.9257585,5.5 15.6057595,5.62749455 15.3610114,5.87946602 Z"
+                        id="path-1"
+                      ></path>
+                    </svg>
+                  </span>
+                </span>
+
+                <ul class="c-platform-footer-list c-platform-footer-list--rsi">
+                  <li class="c-platform-footer-list__item">
+                    <a href="#featuredProjects" class="c-platform-footer-link">Featured Projects</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="#news" class="c-platform-footer-link">News</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="#skills" class="c-platform-footer-link">Skills</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="#publications" class="c-platform-footer-link">Publications</a>
+                  </li>
+
+                  <li class="c-platform-footer-list__item">
+                    <a href="#work" class="c-platform-footer-link">Work</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <div class="c-platform-copyright c-platform-copyright--rsi">
+        <div class="l-platform-copyright-container">
+          <p class="c-platform-copyright__body">Designed by Vidhi Mody</p>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        window.RSI.Footer = new RSI.Footer();
+      </script>
+    </div>
+
+    <script type="text/javascript" src="cache/en/rsi-platformbar-js.js?v=3.12.0"></script>
+  </body>
+</html>
